@@ -43,7 +43,8 @@
 }
 
 .app .container {
-  width: 1024px;
+  /* width: 1024px; */
+  width: 100%;
 }
 
 .app .container .link {

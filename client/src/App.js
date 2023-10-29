@@ -34,6 +34,12 @@ const router = createBrowserRouter([
         path:"/post/:id",
         element:<Single/>,
       },
+      {
+  
+        path:"/write",
+        element:<Write/>,
+      },
+     
     ]
   },
 
@@ -47,12 +53,7 @@ const router = createBrowserRouter([
     path:"/login",
     element:<Login/>,
   },
-  {
   
-    path:"/write",
-    element:<Write/>,
-  },
- 
 
 
 
