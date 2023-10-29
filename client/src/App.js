@@ -8,6 +8,8 @@ import Footer from "./components/Footer";
 import Home from './Pages/Home';
 import Single from './Pages/Single';
 import Login from './Pages/Login';
+import Write from './Pages/Write';
+
 
 const Layout = ()=>{
   return(
@@ -29,7 +31,7 @@ const router = createBrowserRouter([
         element:<Home/>,
       },
       {
-        path:"/single",
+        path:"/post/:id",
         element:<Single/>,
       },
     ]
@@ -45,6 +47,13 @@ const router = createBrowserRouter([
     path:"/login",
     element:<Login/>,
   },
+  {
+  
+    path:"/write",
+    element:<Write/>,
+  },
+ 
+
 
 
 ]);
@@ -52,7 +61,7 @@ const router = createBrowserRouter([
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <div className="container">
       <RouterProvider router={router}/>
       </div>
